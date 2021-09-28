@@ -2,7 +2,7 @@ class Pessoa:
 
     olhos = 2
 
-    def __init__(self, *filhos, nome=None, idade=35):
+    def __init__(self, nome=None, idade=35, *filhos):
 
         self.nome = nome
         self.idade = idade
@@ -12,6 +12,9 @@ class Pessoa:
         return f'Olá {id(self)}'
 
 class Homem(Pessoa):
+    pass
+
+class Mulher(Pessoa):
     pass
 
 if __name__ == '__main__':
